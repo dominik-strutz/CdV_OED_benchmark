@@ -1,0 +1,42 @@
+# run: conda env create --file environment.yml
+name: cdv_oed_benchmark
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+
+# general dependencies
+- python
+- pip
+- tqdm
+
+# array processing
+- numpy
+- pandas
+- xarray
+- h5py
+- netcdf4
+
+# ML libraries 
+- pytorch
+
+# plotting
+- matplotlib
+- seaborn
+
+# parallel processing
+- dill
+- mpire
+- joblib
+
+# general scientific libraries
+- scipy
+- shapely
+- scikit-learn
+
+- pip:
+  - pykonal
+  - zuko
+  - imageio
+  - pygad
+  - git+https://github.com/neurophysik/CHSPy
